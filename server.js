@@ -1,6 +1,10 @@
-// load the things we need
 var express = require('express');
+var path = require('path');
+var router = require('./routes/routes');
+
 var app = express();
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -8,14 +12,7 @@ app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 
 // index page 
-app.get('/', function(req, res) {
-	res.render('pages/index');
-});
+app.use('/', router);
 
-// about page 
-app.get('/about', function(req, res) {
-	res.render('pages/about');
-});
-
-app.listen(8080);
+app.listen(3000);
 console.log('8080 is the magic port');
