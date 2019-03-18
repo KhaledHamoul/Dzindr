@@ -39,11 +39,6 @@ CREATE TABLE `matches` (
 -- Dumping data for table `matches`
 --
 
-INSERT INTO `matches` (`id`, `user`, `propose`, `reaction`) VALUES
-(36, 12, 11, 0),
-(37, 13, 12, 1),
-(38, 12, 13, 0),
-(39, 11, 12, 0);
 
 -- --------------------------------------------------------
 
@@ -72,7 +67,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `nom`, `prenom`, `description`, `sexe`, `age`, `pays`, `email`, `password`, `avatar`, `prefered`) VALUES
 (11, 'Benmazouza', 'Hakou', 'Some quick example text to build on the card title.', 'h', '23', 'Algeria', 'fa_benmazouza@esi.dz', 'mdp', '/storage/avatars/default.png', '{}'),
 (12, 'admin', 'admin', 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 'h', '26', 'France', 'admin', 'admin', '/storage/avatars/default.png', '{}'),
-(13, 'HAMOUL', 'HAMOUL', 'description', 'h', '23', 'USA', 'khaled@khaled', 'admin', '/storage/avatars/default.png', '{}');
+(13, 'khaled', 'khaled', 'description', 'h', '23', 'USA', 'khaled@khaled', 'admin', '/storage/avatars/default.png', '{}');
 
 --
 -- Indexes for dumped tables
