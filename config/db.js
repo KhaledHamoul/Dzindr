@@ -8,7 +8,6 @@ var mysql = {
 		database: 'dzindr'
 	}
 
-
 var sequelize = new Sequelize(
 	mysql.database,
 	mysql.username,
